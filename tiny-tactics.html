@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiny Tactics - Case Study | Maulina Nur Laila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diabetaku.css">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body>
+  <nav class="topbar"><a href="index.html#projects">← Back to projects</a><span>Case study 03</span></nav>
+  <main>
+    <header class="hero">
+      <h1>TINY TACTICS</h1>
+      <div class="hero-row">
+        <p class="sub">A minimalist web Tic-Tac-Toe game, used as a hands-on project for CI/CD and deployment workflow.</p>
+        <ul class="tags"><li>GitHub Actions</li><li>Vercel</li><li>DevOps</li></ul>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <img src="assets/tiny-tactics.png" alt="Tampilan game Tiny Tactics">
+      <dl class="stats">
+        <div><dt>CI/CD</dt><dd><b>Workflow</b>Automated build and deploy</dd></div>
+        <div><dt>GitHub</dt><dd><b>Source Control</b>Actions as the runner</dd></div>
+        <div><dt>Auto</dt><dd><b>Validation</b>Checks before every release</dd></div>
+        <div><dt>Vercel</dt><dd><b>Hosting</b>Live web deployment</dd></div>
+      </dl>
+    </section>
+
+    <section class="ps">
+      <div>
+        <p class="kicker">Challenge</p>
+        <h2>The Problem</h2>
+        <p>Manual builds and deployments are slow and easy to get wrong. Without automated checks, a broken change can reach production unnoticed.</p>
+        <p class="note">Goal: ship every change through the same repeatable, automated path.</p>
+      </div>
+      <div>
+        <p class="kicker">Solution</p>
+        <h2>The Approach</h2>
+        <p>A simple game with two-player turns, real-time win detection, and a restart option keeps the app small, so the focus stays on the pipeline: GitHub Actions validates each commit, then Vercel deploys it.</p>
+        <p class="note">Outcome: push to GitHub, and the new version goes live automatically.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">How the Pipeline Works</h2>
+      <div class="flow">
+        <div><span>01 / Source</span><b>Code Commit</b><small>Changes are pushed to the GitHub repository.</small></div>
+        <div><span>02 / Trigger</span><b>GitHub Actions</b><small>The workflow starts on push or pull request.</small></div>
+        <div><span>03 / Validate</span><b>Build &amp; Check</b><small>Dependencies install, the build runs, and checks must pass.</small></div>
+        <div><span>04 / Deploy</span><b>Vercel</b><small>A successful build is deployed to the live site.</small></div>
+      </div>
+    </section>
+
+    <section class="built sec">
+      <h2 class="section-title">What I Built</h2>
+      <ol>
+        <li><span class="num">01</span><div class="what"><h3>Workflow Setup</h3><small>GitHub Actions</small></div><p>Wrote the workflow file that defines triggers, jobs, and steps for the repository.</p></li>
+        <li><span class="num">02</span><div class="what"><h3>Automation</h3><small>Build pipeline</small></div><p>Automated dependency install and build so every commit is processed the same way.</p></li>
+        <li><span class="num">03</span><div class="what"><h3>Validation</h3><small>Quality gate</small></div><p>Added checks that must pass before a change is allowed to reach deployment.</p></li>
+        <li><span class="num">04</span><div class="what"><h3>Deployment</h3><small>Vercel</small></div><p>Connected the repository to Vercel for automatic production deploys.</p></li>
+      </ol>
+    </section>
+
+    <section class="process sec">
+      <h2 class="section-title">Process</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Setup</h3><p>Create the repository and the game base.</p></li>
+        <li><span>02</span><h3>Define</h3><p>Decide the pipeline stages and triggers.</p></li>
+        <li><span>03</span><h3>Automate</h3><p>Write the GitHub Actions workflow.</p></li>
+        <li><span>04</span><h3>Validate</h3><p>Run builds and confirm checks block bad changes.</p></li>
+        <li><span>05</span><h3>Deploy</h3><p>Release to Vercel and verify the live site.</p></li>
+      </ol>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Project Visuals</h2>
+      <div class="visuals">
+        <div class="shot" data-label="Screenshot: Workflow run"><img src="assets/tiny-tactics-1.png" alt="Hasil workflow GitHub Actions" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screenshot: Vercel deployment"><img src="assets/tiny-tactics-2.png" alt="Deployment di Vercel" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screenshot: Game board"><img src="assets/tiny-tactics-3.png" alt="Papan game Tiny Tactics" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <a class="next" href="bookmate.html">
+      <div><p>Next project</p><h2>BOOKMATE</h2></div>
+      <span class="go">→</span>
+    </a>
+  </main>
+  <footer>© 2026 Maulina Nur Laila</footer>
+</body>
+</html>

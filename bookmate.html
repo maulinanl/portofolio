@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMate - Case Study | Maulina Nur Laila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diabetaku.css">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body>
+  <nav class="topbar"><a href="index.html#projects">← Back to projects</a><span>Case study 04</span></nav>
+  <main>
+    <header class="hero">
+      <h1>BOOKMATE</h1>
+      <div class="hero-row">
+        <p class="sub">Android e-book management app to organize your personal library in one place.</p>
+        <ul class="tags"><li>Flutter</li><li>Firebase</li><li>Figma</li></ul>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <img src="assets/bookMate.png" alt="Tampilan aplikasi BookMate">
+      <dl class="stats">
+        <div><dt>Android</dt><dd><b>Platform</b>Flutter mobile app</dd></div>
+        <div><dt>Firebase</dt><dd><b>Backend</b>Cloud data storage</dd></div>
+        <div><dt>CRUD</dt><dd><b>Core Feature</b>Create, read, update, delete</dd></div>
+        <div><dt>E-Book</dt><dd><b>Domain</b>Personal book collection</dd></div>
+      </dl>
+    </section>
+
+    <section class="ps">
+      <div>
+        <p class="kicker">Challenge</p>
+        <h2>The Problem</h2>
+        <p>Digital books end up scattered across folders and apps. Readers lose track of what they own, what they are reading, and where they stopped.</p>
+        <p class="note">Goal: one simple place to manage an entire e-book collection.</p>
+      </div>
+      <div>
+        <p class="kicker">Solution</p>
+        <h2>The Approach</h2>
+        <p>BookMate stores each book as a record in Firebase and gives the user a clean Flutter interface to add, browse, edit, and remove books, with the data always in sync.</p>
+        <p class="note">Outcome: a focused library manager built around solid CRUD.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">CRUD at the Core</h2>
+      <div class="cards">
+        <div><em>01</em><h3>Create</h3><p>Add a new book with its details to the library.</p></div>
+        <div><em>02</em><h3>Read</h3><p>Browse the collection and open a book's detail page.</p></div>
+        <div><em>03</em><h3>Update</h3><p>Edit book information whenever something changes.</p></div>
+        <div><em>04</em><h3>Delete</h3><p>Remove books that are no longer needed.</p></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Data Flow</h2>
+      <div class="flow">
+        <div><span>01 / UI</span><b>Flutter Screen</b><small>User action such as adding or editing a book.</small></div>
+        <div><span>02 / Logic</span><b>App Logic</b><small>Input is validated and prepared for saving.</small></div>
+        <div><span>03 / Cloud</span><b>Firebase</b><small>Data is written to and read from the cloud.</small></div>
+        <div><span>04 / Result</span><b>Updated UI</b><small>The interface refreshes with the latest data.</small></div>
+      </div>
+    </section>
+
+    <section class="built sec">
+      <h2 class="section-title">What I Built</h2>
+      <ol>
+        <li><span class="num">01</span><div class="what"><h3>Android Development</h3><small>Flutter</small></div><p>Built the screens and navigation for browsing and managing the library.</p></li>
+        <li><span class="num">02</span><div class="what"><h3>Firebase Integration</h3><small>Backend</small></div><p>Connected the app to Firebase for storing and retrieving book data.</p></li>
+        <li><span class="num">03</span><div class="what"><h3>CRUD Operations</h3><small>Data handling</small></div><p>Implemented create, read, update, and delete flows end to end.</p></li>
+        <li><span class="num">04</span><div class="what"><h3>UI / UX Design</h3><small>Figma</small></div><p>Designed a calm, readable interface and prototyped it before coding.</p></li>
+      </ol>
+    </section>
+
+    <section class="process sec">
+      <h2 class="section-title">Process</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Plan</h3><p>Define features and the book data model.</p></li>
+        <li><span>02</span><h3>Design</h3><p>Prototype the flows in Figma.</p></li>
+        <li><span>03</span><h3>Build</h3><p>Develop the Flutter screens and Firebase logic.</p></li>
+        <li><span>04</span><h3>Test</h3><p>Try every CRUD path and edge case.</p></li>
+        <li><span>05</span><h3>Iterate</h3><p>Refine the interface based on testing.</p></li>
+      </ol>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Project Visuals</h2>
+      <div class="visuals">
+        <div class="shot" data-label="Screen: Library"><img src="assets/bookmate-1.png" alt="Layar perpustakaan BookMate" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Book detail"><img src="assets/bookmate-2.png" alt="Layar detail buku BookMate" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Add / edit book"><img src="assets/bookmate-3.png" alt="Layar tambah buku BookMate" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <a class="next" href="noteshare.html">
+      <div><p>Next project</p><h2>NOTESHARE</h2></div>
+      <span class="go">→</span>
+    </a>
+  </main>
+  <footer>© 2026 Maulina Nur Laila</footer>
+</body>
+</html>

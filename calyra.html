@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calyra - Case Study | Maulina Nur Laila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diabetaku.css">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body>
+  <nav class="topbar"><a href="index.html#projects">← Back to projects</a><span>Case study 02</span></nav>
+  <main>
+    <header class="hero">
+      <h1>CALYRA</h1>
+      <div class="hero-row">
+        <p class="sub">Rule-based recommendation system that matches personal color analysis to the right makeup shades.</p>
+        <ul class="tags"><li>Flutter</li><li>Laravel</li><li>Protégé</li><li>Figma</li></ul>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <img src="assets/calyra.png" alt="Tampilan aplikasi Calyra">
+      <dl class="stats">
+        <div><dt>Rule</dt><dd><b>Approach</b>Expert-system inference</dd></div>
+        <div><dt>Ontology</dt><dd><b>Knowledge Model</b>Modeled in Protégé</dd></div>
+        <div><dt>Flutter</dt><dd><b>Mobile Client</b>Cross-platform UI</dd></div>
+        <div><dt>Laravel</dt><dd><b>Inference API</b>REST backend</dd></div>
+      </dl>
+    </section>
+
+    <section class="ps">
+      <div>
+        <p class="kicker">Challenge</p>
+        <h2>The Problem</h2>
+        <p>Choosing makeup that suits your skin tone and undertone is mostly trial and error. Personal color knowledge lives with experts, so most people guess and end up with shades that do not match.</p>
+        <p class="note">Goal: turn expert color knowledge into something an app can apply consistently.</p>
+      </div>
+      <div>
+        <p class="kicker">Solution</p>
+        <h2>The Approach</h2>
+        <p>Calyra encodes personal color logic as an ontology and a set of rules. A Laravel API runs the inference, and a Flutter app presents the recommendation in a clear, visual way.</p>
+        <p class="note">Outcome: consistent, explainable recommendations instead of guesswork.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">System Architecture</h2>
+      <div class="flow">
+        <div><span>01 / Input</span><b>Photo Input</b><small>User captures or uploads a photo in the Flutter app.</small></div>
+        <div><span>02 / Extract</span><b>Color Extraction</b><small>Skin tone and undertone values are extracted from the image.</small></div>
+        <div><span>03 / Infer</span><b>Rule Inference</b><small>Laravel applies ontology rules to classify the color type.</small></div>
+        <div><span>04 / Output</span><b>Recommendation</b><small>Matching makeup shades are returned and displayed.</small></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Core Implementation</h2>
+      <div class="cards">
+        <div><em>01</em><h3>Ontology Modeling</h3><p>Designed classes, properties, and rules for color types in Protégé.</p></div>
+        <div><em>02</em><h3>Flutter Mobile Client</h3><p>Built the screens, navigation, and result presentation.</p></div>
+        <div><em>03</em><h3>Laravel Inference API</h3><p>Exposed the rule engine through REST endpoints.</p></div>
+        <div><em>04</em><h3>Color Extraction</h3><p>Processed image input into values the rules can use.</p></div>
+      </div>
+    </section>
+
+    <section class="process sec">
+      <h2 class="section-title">Process</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Research</h3><p>Study personal color theory and makeup matching.</p></li>
+        <li><span>02</span><h3>Define</h3><p>Turn expert knowledge into ontology classes and rules.</p></li>
+        <li><span>03</span><h3>Design</h3><p>Plan the flow and prototype the screens in Figma.</p></li>
+        <li><span>04</span><h3>Build</h3><p>Implement the ontology, Laravel API, and Flutter app.</p></li>
+        <li><span>05</span><h3>Test</h3><p>Check rule accuracy against sample cases and refine.</p></li>
+      </ol>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Application Screens</h2>
+      <div class="visuals">
+        <div class="shot" data-label="Screen: Photo input"><img src="assets/calyra-1.png" alt="Layar input foto Calyra" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Color analysis"><img src="assets/calyra-2.png" alt="Layar analisis warna Calyra" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Recommendations"><img src="assets/calyra-3.png" alt="Layar rekomendasi Calyra" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <a class="next" href="tiny-tactics.html">
+      <div><p>Next project</p><h2>TINY TACTICS</h2></div>
+      <span class="go">→</span>
+    </a>
+  </main>
+  <footer>© 2026 Maulina Nur Laila</footer>
+</body>
+</html>

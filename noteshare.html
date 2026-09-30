@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoteShare - Case Study | Maulina Nur Laila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diabetaku.css">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body>
+  <nav class="topbar"><a href="index.html#projects">← Back to projects</a><span>Case study 05</span></nav>
+  <main>
+    <header class="hero">
+      <h1>NOTESHARE</h1>
+      <div class="hero-row">
+        <p class="sub">A notes sharing platform where simple product ideas connect interface design, information structure, and data.</p>
+        <ul class="tags"><li>Flutter</li><li>Firebase</li><li>Figma</li></ul>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <img src="assets/noteshare.png" alt="Tampilan aplikasi NoteShare">
+      <dl class="stats">
+        <div><dt>Mobile</dt><dd><b>Platform</b>Flutter app</dd></div>
+        <div><dt>Notes</dt><dd><b>Core Feature</b>Write and share notes</dd></div>
+        <div><dt>Firebase</dt><dd><b>Database</b>Cloud data storage</dd></div>
+        <div><dt>UI/UX</dt><dd><b>Design</b>Figma prototype</dd></div>
+      </dl>
+    </section>
+
+    <section class="ps">
+      <div>
+        <p class="kicker">Challenge</p>
+        <h2>The Problem</h2>
+        <p>Notes are usually stuck on one device or buried in chat threads, which makes sharing knowledge with classmates or teammates slow and messy.</p>
+        <p class="note">Goal: make writing and sharing a note as easy as sending a message.</p>
+      </div>
+      <div>
+        <p class="kicker">Solution</p>
+        <h2>The Approach</h2>
+        <p>NoteShare keeps the idea small: a clear interface for writing notes, a simple data structure in Firebase, and a sharing flow that lets others read them right away.</p>
+        <p class="note">Outcome: a compact product that ties UI, structure, and data together.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Product Flow</h2>
+      <div class="flow">
+        <div><span>01 / Write</span><b>Create Note</b><small>User writes a note in the editor.</small></div>
+        <div><span>02 / Save</span><b>Store in Firebase</b><small>The note is saved to the cloud database.</small></div>
+        <div><span>03 / Share</span><b>Share Note</b><small>The note is made available to other users.</small></div>
+        <div><span>04 / Read</span><b>View Shared</b><small>Others open and read the shared note.</small></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Data Structure</h2>
+      <div class="cards">
+        <div><em>01</em><h3>Users</h3><p>Account information that identifies who owns each note.</p></div>
+        <div><em>02</em><h3>Notes</h3><p>Title, content, and metadata for every note.</p></div>
+        <div><em>03</em><h3>Sharing</h3><p>Rules for who can view a note once it is shared.</p></div>
+      </div>
+    </section>
+
+    <section class="built sec">
+      <h2 class="section-title">What I Built</h2>
+      <ol>
+        <li><span class="num">01</span><div class="what"><h3>Product Structure</h3><small>Planning</small></div><p>Defined the main screens and how a user moves between them.</p></li>
+        <li><span class="num">02</span><div class="what"><h3>Flutter Development</h3><small>Mobile client</small></div><p>Built the note editor, list, and sharing screens.</p></li>
+        <li><span class="num">03</span><div class="what"><h3>UI / UX Design</h3><small>Figma</small></div><p>Designed a clean layout focused on writing and reading.</p></li>
+        <li><span class="num">04</span><div class="what"><h3>Data Thinking</h3><small>Firebase</small></div><p>Organized how notes and sharing are stored and retrieved.</p></li>
+      </ol>
+    </section>
+
+    <section class="process sec">
+      <h2 class="section-title">Process</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Plan</h3><p>Define the idea and the core user flow.</p></li>
+        <li><span>02</span><h3>Design</h3><p>Sketch screens and prototype in Figma.</p></li>
+        <li><span>03</span><h3>Structure</h3><p>Decide how data is organized in Firebase.</p></li>
+        <li><span>04</span><h3>Build</h3><p>Develop the Flutter app and connect the data.</p></li>
+        <li><span>05</span><h3>Test</h3><p>Walk through write, share, and read flows.</p></li>
+      </ol>
+    </section>
+
+    <section class="sec">
+      <h2 class="section-title">Final Interface</h2>
+      <div class="visuals">
+        <div class="shot" data-label="Screen: Note list"><img src="assets/noteshare-1.png" alt="Daftar catatan NoteShare" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Editor"><img src="assets/noteshare-2.png" alt="Editor catatan NoteShare" onerror="this.style.display='none'"></div>
+        <div class="shot" data-label="Screen: Share"><img src="assets/noteshare-3.png" alt="Layar berbagi NoteShare" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <a class="next" href="index.html#projects">
+      <div><p>Next project</p><h2>MORE PROJECTS</h2></div>
+      <span class="go">→</span>
+    </a>
+  </main>
+  <footer>© 2026 Maulina Nur Laila</footer>
+</body>
+</html>
