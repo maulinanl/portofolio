@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiabetAku - Case Study | Maulina Nur Laila</title>
+  <meta name="description" content="Case study DiabetAku, aplikasi pemantauan diabetes berbasis smartphone.">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="diabetaku.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <nav class="topbar">
+    <a href="index.html#projects">← Back to projects</a>
+    <span>Case study v1.4</span>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero">
+      <h1>DIABETAKU</h1>
+      <div class="hero-row">
+        <p class="sub">Smartphone-based diabetes monitoring application built for doctors, patients, and families.</p>
+        <ul class="tags">
+          <li>Flutter</li><li>Laravel</li><li>PostgreSQL</li><li>REST API</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MOCKUP + STATS -->
+    <section class="showcase">
+      <img src="assets/diabetaku-mockup.png" alt="Tampilan aplikasi DiabetAku di tiga layar ponsel">
+      <dl class="stats">
+        <div><dt>04</dt><dd><b>User Roles</b>Doctor, Patient, Family, Admin</dd></div>
+        <div><dt>97</dt><dd><b>Use Case</b>Continuous Integration</dd></div>
+        <div><dt>Android &amp; iOS</dt><dd><b>Target Platform</b>Flutter Mobile Deployment</dd></div>
+        <div><dt>Full</dt><dd><b>Scope of Work</b>End-to-End Engineering &amp; API</dd></div>
+      </dl>
+    </section>
+
+    <!-- PROBLEM & SOLUTION -->
+    <section class="ps">
+      <div>
+        <p class="kicker">Challenge</p>
+        <h2>The Problem</h2>
+        <p>Diabetes monitoring involves multiple disconnected types of information and divergent user stakeholders. Patients often record inconsistent logs on paper or isolated apps, doctors lack consolidated longitudinal trends during consultations, and worried families are left unaware during emergency hypo/hyperglycemic fluctuations.</p>
+        <p class="note">Goal: Unify fragmented diabetic data into an authoritative, synchronized multi stakeholder health platform.</p>
+      </div>
+      <div>
+        <p class="kicker">Solution</p>
+        <h2>The Approach</h2>
+        <p>DiabeTaku was engineered as a centralized digital ecosystem combining an ultra-responsive Flutter cross-platform mobile client with an enterprise-grade Laravel REST API and a robust PostgreSQL relational database. Dynamic access control segregates granular views specifically tailored for Doctor, Patient, Family, and Admin actors.</p>
+        <p class="note">Outcome: Real-time telemetry, rapid medical intervention alerts, and high-integrity medical history auditing.</p>
+      </div>
+    </section>
+
+    <!-- SYSTEM ARCHITECTURE -->
+    <section class="arch">
+      <h2 class="section-title">System Architecture</h2>
+      <div class="arch-grid">
+        <img class="diagram" src="assets/diabetaku-arsitektur.png" alt="Diagram arsitektur sistem DiabetAku: presentation layer, business logic layer, data layer, dan external service">
+
+        <aside class="rbac">
+          <h3>Role-Based Access Control (RBAC)</h3>
+          <p class="rbac-intro">Enforced at both UI view layers and API controller middleware before database transactions execute.</p>
+
+          <div class="role">
+            <div><h4>01 / Doctor</h4><span>Clinical</span></div>
+            <p>Access to all assigned patient history, trends, glycemic analytics &amp; dosage prescription tools.</p>
+          </div>
+          <div class="role">
+            <div><h4>02 / Patient</h4><span>Telemetry</span></div>
+            <p>Daily blood sugar inputs, meal logging, personal reminder schedules &amp; direct doctor notes.</p>
+          </div>
+          <div class="role">
+            <div><h4>03 / Caregiver</h4><span>Supervision</span></div>
+            <p>Read-only oversight dashboard, missed measurement notifications &amp; instant emergency panic alerts.</p>
+          </div>
+          <div class="role">
+            <div><h4>04 / Admin</h4><span>System</span></div>
+            <p>User registration verification, clinic credential provisioning, system telemetry &amp; database maintenance.</p>
+          </div>
+
+          <p class="integrity">Integrity: AES-256 encrypted transit</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WHAT I BUILT -->
+    <section class="built">
+      <h2 class="section-title">What I Built</h2>
+      <ol>
+        <li>
+          <span class="num">01</span>
+          <div class="what"><h3>Flutter Development</h3><small>Mobile client implementation</small></div>
+          <p>Built the mobile interface and complete client navigation hierarchy. Developed modular widget components, state listeners, and dynamic graphical visualizers for real-time glycemic data plotting.</p>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div class="what"><h3>REST API Integration</h3><small>Networking &amp; serialization</small></div>
+          <p>Seamlessly connected the Flutter application with the Laravel REST API backend. Implemented asynchronous network requests, automated token refreshment cycles, request error handling, and offline write queues.</p>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div class="what"><h3>Role-Based Access</h3><small>Authentication architecture</small></div>
+          <p>Engineered user authorization flows across 4 roles: Doctor, Patient, Family, and Admin. Configured JWT claims and guard policies preventing unauthorized data exposure across patient boundary records.</p>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <div class="what"><h3>UI / UX Architecture</h3><small>Human-centered design</small></div>
+          <p>Synthesized complex clinical requirements into intuitive user flows, high-contrast accessible layouts suitable for elderly diabetic patients, and interactive Figma prototypes prior to production coding.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process">
+      <h2 class="section-title">Process</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Research</h3><p>Understand users, clinical standards, and strict health information requirements.</p></li>
+        <li><span>02</span><h3>Define</h3><p>Clarify product structure, database entity relations, and API endpoint contracts.</p></li>
+        <li><span>03</span><h3>Design</h3><p>Map end-to-end user flows, low-friction input modes, and high-fidelity interface prototypes.</p></li>
+        <li><span>04</span><h3>Build</h3><p>Develop the Flutter mobile application, construct Laravel services, and integrate REST APIs.</p></li>
+        <li><span>05</span><h3>Test</h3><p>Validate user permissions, test network edge-cases, inspect latency, and refine UI ergonomics.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>© 2026 Maulina Nur Laila</footer>
+</body>
+</html>

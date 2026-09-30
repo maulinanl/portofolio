@@ -1,0 +1,159 @@
+/* Style khusus halaman case study DiabetAku.
+   Terpisah dari style.css supaya halaman utama tidak terpengaruh. */
+
+:root {
+  --bg: #050a14;
+  --panel: #0b1322;
+  --line: #16233b;
+  --blue: #2563ff;
+  --text: #e8edf6;
+  --muted: #8b97ad;
+  --display: "Anton", "Arial Narrow", sans-serif;
+  --body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --pad: clamp(20px, 3.5vw, 40px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 300 16px/1.65 var(--body);
+}
+
+img { max-width: 100%; display: block; }
+ol, ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+main { max-width: 1240px; margin: 0 auto; padding: 0 var(--pad); }
+
+/* Top bar */
+.topbar {
+  display: flex; justify-content: space-between;
+  padding: 18px var(--pad);
+  border-bottom: 2px solid var(--blue);
+  font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+}
+.topbar a:hover { color: var(--blue); }
+.topbar span { color: var(--blue); }
+
+/* Judul section */
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; }
+.section-title {
+  font-size: clamp(32px, 4vw, 44px);
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 36px;
+}
+
+/* Hero */
+.hero { padding: 36px 0 40px; border-bottom: 1px solid var(--line); }
+.hero h1 {
+  font-size: clamp(72px, 15vw, 190px);
+  color: var(--blue);
+  letter-spacing: -.01em;
+  line-height: .95;
+}
+.hero-row {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 24px; flex-wrap: wrap; margin-top: 8px;
+}
+.sub { max-width: 520px; font-size: clamp(18px, 2vw, 22px); color: #cfd7e6; }
+.tags { display: flex; gap: 10px; flex-wrap: wrap; }
+.tags li {
+  border: 1px solid var(--muted); border-radius: 999px;
+  padding: 4px 16px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+}
+
+/* Mockup + statistik */
+.showcase {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+  gap: 32px; padding: 48px 0;
+}
+.showcase img { max-width: 440px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 32px; }
+.stats > div { border-left: 1px solid var(--blue); padding-left: 20px; }
+.stats dt { font-family: var(--display); font-size: clamp(36px, 4.5vw, 56px); line-height: 1.1; }
+.stats dd { font-size: 13px; color: var(--muted); }
+.stats b {
+  display: block; font-weight: 400; font-size: 12px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--blue);
+}
+
+/* Problem & Solution */
+.ps { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding-bottom: 8px; }
+.ps > div { padding: 0 var(--pad) 0 0; display: flex; flex-direction: column; gap: 14px; }
+.ps > div + div { padding: 0 0 0 var(--pad); border-left: 1px solid var(--line); }
+.kicker { color: var(--blue); font-size: 18px; margin-bottom: -6px; }
+.ps h2 { font-size: clamp(30px, 3.5vw, 40px); }
+.ps p { text-align: justify; color: #c3ccdc; }
+.note {
+  margin-top: auto; padding: 10px 16px; font-size: 13px;
+  border-left: 1px solid var(--blue); background: var(--panel);
+}
+
+/* Arsitektur */
+.arch { padding-top: 40px; }
+.arch-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.diagram { border-radius: 24px; background: #fff; width: 100%; }
+
+.rbac { background: var(--panel); border: 1px solid var(--line); padding: 20px 24px 24px; }
+.rbac h3 { font-family: var(--body); font-weight: 500; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }
+.rbac-intro { font-size: 12px; color: var(--muted); padding: 12px 0 16px; border-top: 1px solid var(--line); margin-top: 12px; }
+.role { border: 1px solid var(--line); background: #08101d; padding: 14px 16px; margin-bottom: 14px; }
+.role > div { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.role h4 { font-weight: 400; font-size: 13px; }
+.role span { border: 1px solid var(--muted); border-radius: 999px; padding: 0 12px; font-size: 10px; text-transform: uppercase; }
+.role p { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.integrity { text-align: center; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); padding-top: 12px; border-top: 1px solid var(--line); }
+
+/* What I built */
+.built { padding-top: 64px; }
+.built li {
+  display: grid; grid-template-columns: 90px 260px 1fr; gap: 24px; align-items: center;
+  padding: 24px 0; border-top: 1px solid var(--line);
+}
+.built li:first-child { border-top-color: var(--line); }
+.num { font-family: var(--display); font-size: 48px; color: var(--blue); }
+.what h3 { font-size: 24px; }
+.what small { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.built p { color: #c3ccdc; }
+
+/* Process */
+.process { padding: 64px 0 80px; }
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; position: relative; }
+.steps li { position: relative; padding-top: 4px; }
+.steps span {
+  display: grid; place-items: center; width: 42px; height: 42px;
+  border: 1px solid var(--muted); border-radius: 50%;
+  font-size: 13px; background: var(--bg); margin-bottom: 18px;
+  position: relative; z-index: 1;
+}
+/* Garis penghubung antar langkah */
+.steps::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 25px;
+  height: 1px; background: var(--line);
+}
+.steps h3 { font-family: var(--body); font-weight: 500; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 8px; }
+.steps p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+footer { text-align: center; padding: 28px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+
+/* Tablet */
+@media (max-width: 960px) {
+  .showcase, .ps, .arch-grid { grid-template-columns: 1fr; }
+  .showcase img { margin: 0 auto; }
+  .ps > div, .ps > div + div { padding: 0 0 32px; border-left: 0; }
+  .built li { grid-template-columns: 60px 1fr; }
+  .built li p { grid-column: 1 / -1; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .steps::before { display: none; }
+}
+
+/* Ponsel */
+@media (max-width: 560px) {
+  .stats { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .ps p { text-align: left; }
+}
